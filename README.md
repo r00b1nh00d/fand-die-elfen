@@ -8,6 +8,13 @@ Deine einzige Chance, wenn Sie in der Mitte des Bildschirms sind Drücke die Tas
 Erstelle ``||basic:beim Start||`` eine Variable ``||variables:Elfen||`` und eine namens ``||variables:Zeit||`` und Stelle eine Zeit von 22 ein <br>
 Hier kannst du auch gleich noxh den Block ``||game: setze Anzahl Leben||`` einfügen.
 
+```blocks
+let zeit = 0
+let Elfen= game.createSprite(2, 2)
+zeit = 200
+game.setLife(10)
+```
+
 ## Schritt 2
 Um die Elfen über den Bildschirm flitzen zu lassen, sollen Sie sich zu Beginn des ``||basic:dauerhaft||`` Blocks ``||game: um 1 bewegen||``. <br>
 Anschließend soll mit einer ``||logic:wenn-dann||`` - Bedingung geprüft werden ob der Elf schon den Rand berührt. <br>
@@ -29,8 +36,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let zeit = 0
-let Elfen: game.LedSprite = null
-Elfen = game.createSprite(2, 2)
+let Elfen = game.createSprite(2, 2)
 zeit = 200
 game.setLife(10)
 basic.forever(function () {
