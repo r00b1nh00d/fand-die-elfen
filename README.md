@@ -18,6 +18,8 @@ Sollte er den Rand Berühren kannst du mithilfe von weiteren ``||logic:wenn-dann
 
 ## Schritt 3
 Ich hoffe du hast es erstmal selbst versucht. Sollte es noch kleinere Buggs geben wäre hier auch eine Lösungsmöglichkeit.
+
+```blocks 
 input.onButtonPressed(Button.A, function () {
     if (Elfen.get(LedSpriteProperty.X) == 2 && Elfen.get(LedSpriteProperty.Y) == 2) {
         game.addScore(1)
@@ -52,4 +54,4 @@ basic.forever(function () {
     }
     basic.pause(zeit)
 })
-
+```
